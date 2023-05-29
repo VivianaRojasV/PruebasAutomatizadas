@@ -24,7 +24,7 @@ _En el presente repositorio se realiza la automatización sobre la página demob
 ## Instalación :bulb:
 
 _Para la ejecución, se debe descargar el archivo que se encuentra en este repositorio que se encuentra en la rama master
-[![Screenshot-11.jpg](https://i.postimg.cc/Jn7f9MVQ/Screenshot-11.jpg)](https://postimg.cc/zLM2hmfL)
+[![Screenshot-11.jpg](https://i.postimg.cc/Jn7f9MVQ/Screenshot-11.jpg)](https://postimg.cc/zLM2hmfL)_
 
 _Al descargar debemos extraer los archivos que contienen el proyecto, si la persona no tiene instalada, ninguna herramienta de desarrollo, también puede realizar su ejecución desde el archivo que se encuentra dentro del mismo el cual se llama ejecutar.bat._
 [![Screenshot-1.jpg](https://i.postimg.cc/d3Cc9nKM/Screenshot-1.jpg)](https://postimg.cc/wR9rqXvF)
