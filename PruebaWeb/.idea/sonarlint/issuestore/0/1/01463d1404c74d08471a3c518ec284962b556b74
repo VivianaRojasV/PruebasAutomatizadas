@@ -1,0 +1,6 @@
+
+n
+java:S1223$"LRename this method to prevent any misunderstanding or make it a constructor.(ì¼ªàûÿÿÿÿ8ØÖ›•ÿ0
+o	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì¼ªàûÿÿÿÿ8İÖ›•ÿ0
+‚
+java:S1128"eRemove this unused import 'net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isNotVisible'.(¹ˆà8Õãè•ÿ0

@@ -1,0 +1,11 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¸Ğ³Çÿ0
+Q
+java:S3740"/Provide the parametrized type for this generic.(½•Ë…ıÿÿÿÿ8¸Ğ³Çÿ0
+i
+java:S1223,"LRename this method to prevent any misunderstanding or make it a constructor.(½£¼8¸Ğ³Çÿ0
+z
+java:S1450"XRemove the "leerExcel" field and declare it as a local variable in the relevant methods.(½•Ë…ıÿÿÿÿ8¿Ğ³Çÿ0
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(Âôœ¤8ÁĞ³Çÿ0
+j	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½£¼8ÂĞ³Çÿ0

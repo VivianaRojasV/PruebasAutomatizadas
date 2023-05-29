@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="08fc931dac354459a87a62a35c951b091c160ba2debe4b8fa5062200251524e8.html">Automatizacion Demoblaze</a></span>
+                > <span class="truncate-60"><a
+                    href="32ec4c20064643fa5915d6d6d96289047da4420e9bb486b4be56ea8ae0b1aa89.html">Buscar Producto Categoria </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-05-2023 14:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Automatizacion Demoblaze </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoke Test
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Buscar Producto Categoria
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Dado Me encuentro en el portal del Demoblaze" width="1920"/>
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Viviana opens the browser at https://www.demoblaze.com/" width="1920"/>
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Dado Me encuentro en el portal del Demoblaze (completed)" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Cuando Elija dos productos a comprar" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana agregar carrito task" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton Menu de Categorias" width="1920"/>
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Viviana clicks on Boton Menu de Categorias" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton Menu de Categorias (completed)" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton seleccionar un telefono" width="1920"/>
+                <img src="7dd2c31bc7be494a0b38b74c4d3afb04bdf9043fe2aa923b7f5d01c4e168e485.png" title=" Viviana clicks on Telefono uno" width="1920"/>
+                <img src="ebb224b539708de9b60024d7829cd8778f2d889941b44aa8ca33acd07e112ab2.png" title=" Viviana clicks on Telefono uno (completed)" width="1920"/>
+                <img src="8b75ce405b4cd99923ff499e5c81d183279592b6ed2e1c3990fb9eea3e584d79.png" title=" Viviana clicks on Boton adicionar producto" width="1920"/>
+                <img src="e61c8cbf8b67768c7ebb42d7a6f2137f442d6297c6418f17f9e386367eafac09.png" title=" Viviana clicks on Boton adicionar producto (completed)" width="1920"/>
+                <img src="7c3e2998d684b685cf4b75494347ce07c0996ca549db449be31fc2cc88ca7d51.png" title=" Viviana esperar" width="1920"/>
+                <img src="7c3e2998d684b685cf4b75494347ce07c0996ca549db449be31fc2cc88ca7d51.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton devolver al menu (completed)" width="1920"/>
+                <img src="3e7cb4d9e03b8cbe117d28a60c2618baa52a104090a9bd65ff43cefb2cf7d2ae.png" title=" Viviana clicks on Telefono dos" width="1920"/>
+                <img src="ebb224b539708de9b60024d7829cd8778f2d889941b44aa8ca33acd07e112ab2.png" title=" Viviana clicks on Telefono dos" width="1920"/>
+                <img src="bbef04a06d9129dac56114a740edfbda52b645e4d4d043e3fecd4a7839013935.png" title=" Viviana clicks on Telefono dos (completed)" width="1920"/>
+                <img src="bbef04a06d9129dac56114a740edfbda52b645e4d4d043e3fecd4a7839013935.png" title=" Viviana clicks on Boton adicionar producto" width="1920"/>
+                <img src="30037c7618ecdb5430290a6ec815a9a8cb35bdeab866b2cd189f7b9e03f647ac.png" title=" Viviana clicks on Boton adicionar producto (completed)" width="1920"/>
+                <img src="86bfee07931c6e8af62b029778cffc65f3b445279ec0837f8a8a59bb75e351d9.png" title=" Viviana esperar" width="1920"/>
+                <img src="86bfee07931c6e8af62b029778cffc65f3b445279ec0837f8a8a59bb75e351d9.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="f178bd92b4bd7e4fccfa1245c249578b9bce02ce3f94c878c44eb667b7520113.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton devolver al menu (completed)" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana esperar" width="1920"/>
+                <img src="b96b50ac0739dc3558b83dfee3c7fd894b0daf15c0f35d5f62c3335b2372047c.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="45f7c8599d66c77a72f4413669d09c6c463c56e3e84f7f21ba0becfe37989d1c.png" title=" Viviana clicks on Boton devolver al menu (completed)" width="1920"/>
+                <img src="45f7c8599d66c77a72f4413669d09c6c463c56e3e84f7f21ba0becfe37989d1c.png" title=" Viviana esperar" width="1920"/>
+                <img src="45f7c8599d66c77a72f4413669d09c6c463c56e3e84f7f21ba0becfe37989d1c.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="2c28983302b06f56faa55258ff1a14e2da7c8d4b46f306890689918e735cd7f2.png" title=" Viviana clicks on Boton devolver al menu" width="1920"/>
+                <img src="ee6251e4d247beec5ade3b7a9080acfcad57e9bbc8c3f8b6973a3d54cd6653b0.png" title=" Viviana clicks on Boton devolver al menu (completed)" width="1920"/>
+                <img src="ee6251e4d247beec5ade3b7a9080acfcad57e9bbc8c3f8b6973a3d54cd6653b0.png" title=" Viviana agregar carrito task (completed)" width="1920"/>
+                <img src="ee6251e4d247beec5ade3b7a9080acfcad57e9bbc8c3f8b6973a3d54cd6653b0.png" title=" Viviana realizar compra task" width="1920"/>
+                <img src="bddca9eabdaef2cebe168b21acbb4f0ecc3f15eae46ecef3c55e09c529defd0f.png" title=" Viviana enters 'Viviana Rojas' then hits [TAB] into Ingresar nombre" width="1920"/>
+                <img src="4d5a7331b9f785feb63607eaf60409d1b062d14af5d1e33f35fb7f42db5b6d2d.png" title=" Viviana enters 'Viviana Rojas' then hits [TAB] into Ingresar nombre" width="1920"/>
+                <img src="80d15b4873689f3dc9e1d789c9f504c57cc4698186d3862f32d408a09a9b7747.png" title=" Viviana enters 'Viviana Rojas' then hits [TAB] into Ingresar nombre (completed)" width="1920"/>
+                <img src="80d15b4873689f3dc9e1d789c9f504c57cc4698186d3862f32d408a09a9b7747.png" title=" Viviana enters 'Colombia' then hits [TAB] into Ingresar pais" width="1920"/>
+                <img src="94236727e53f0ab4c7716fdff0813d39b4cbbdeef9290b4a9b1209e10bec145c.png" title=" Viviana enters 'Colombia' then hits [TAB] into Ingresar pais" width="1920"/>
+                <img src="a3f6ac7b0fec774ab931f435b6228e2f5c85590c767539651bb0d21ef891609e.png" title=" Viviana enters 'Colombia' then hits [TAB] into Ingresar pais (completed)" width="1920"/>
+                <img src="a3f6ac7b0fec774ab931f435b6228e2f5c85590c767539651bb0d21ef891609e.png" title=" Viviana enters 'Bogota' then hits [TAB] into Ingresar cuidad" width="1920"/>
+                <img src="7f77170c491809713b7fb78d0bbb1f6779b167706c13a7066ea2435d5ef1fed6.png" title=" Viviana enters 'Bogota' then hits [TAB] into Ingresar cuidad" width="1920"/>
+                <img src="d37cf5fd44d00865dcf9ef518329702cc3232bd7b8632893e66e142b5796b2d1.png" title=" Viviana enters 'Bogota' then hits [TAB] into Ingresar cuidad (completed)" width="1920"/>
+                <img src="d37cf5fd44d00865dcf9ef518329702cc3232bd7b8632893e66e142b5796b2d1.png" title=" Viviana enters '2259603321' then hits [TAB] into Ingresar tarjeta" width="1920"/>
+                <img src="f78cc712c0870f444d259d9493f38effad25eca5ee7327baa99e36f8f442f1bd.png" title=" Viviana enters '2259603321' then hits [TAB] into Ingresar tarjeta" width="1920"/>
+                <img src="9f2ddc3cd304fd99c22f58e1b97ee38c6bf382669483b7d5c787f01a60812800.png" title=" Viviana enters '2259603321' then hits [TAB] into Ingresar tarjeta (completed)" width="1920"/>
+                <img src="9f2ddc3cd304fd99c22f58e1b97ee38c6bf382669483b7d5c787f01a60812800.png" title=" Viviana enters '5' then hits [TAB] into Ingresar mes" width="1920"/>
+                <img src="0aadf1ee8778370ba14d1488b1080d5cfc6cab3bd4c28826d640db12afd10ed0.png" title=" Viviana enters '5' then hits [TAB] into Ingresar mes" width="1920"/>
+                <img src="9b2bd37dd58c718da472af49bbc8783d872c09f56960b8b0cf70e54077ed51b8.png" title=" Viviana enters '5' then hits [TAB] into Ingresar mes (completed)" width="1920"/>
+                <img src="9b2bd37dd58c718da472af49bbc8783d872c09f56960b8b0cf70e54077ed51b8.png" title=" Viviana enters '2027' then hits [TAB] into Ingresar a&ntilde;o" width="1920"/>
+                <img src="5b138b15ab45b6ad8e3085f5f749b4c6c424c42142f248d3c1b5c20686783ff0.png" title=" Viviana enters '2027' then hits [TAB] into Ingresar a&ntilde;o" width="1920"/>
+                <img src="72462884865fc47cef2aa3f9f6fafe3e1da075bb89a4d7f7acfe7ceb08fbbc14.png" title=" Viviana enters '2027' then hits [TAB] into Ingresar a&ntilde;o (completed)" width="1920"/>
+                <img src="72462884865fc47cef2aa3f9f6fafe3e1da075bb89a4d7f7acfe7ceb08fbbc14.png" title=" Viviana clicks on Boton comprar" width="1920"/>
+                <img src="f5c11dccbd84f1b3b834c11f0354fe282c788c47f17b8a01dceca72d8eacc65a.png" title=" Viviana clicks on Boton comprar" width="1920"/>
+                <img src="3b437344a0b3f2f3083898b0abe380ab42a105fafc80e61d01c92c0ec0b00cc9.png" title=" Viviana clicks on Boton comprar (completed)" width="1920"/>
+                <img src="3b437344a0b3f2f3083898b0abe380ab42a105fafc80e61d01c92c0ec0b00cc9.png" title=" Viviana realizar compra task (completed)" width="1920"/>
+                <img src="3b437344a0b3f2f3083898b0abe380ab42a105fafc80e61d01c92c0ec0b00cc9.png" title=" Cuando Elija dos productos a comprar (completed)" width="1920"/>
+                <img src="8e145b8ef83e58de05605aa8f755ac1e16bc319e0524e23bdb84b3b377759879.png" title=" Entonces Realizar compra" width="1920"/>
+                <img src="235a5a819aa01d2837ef444085716c6704ff3468b48db525b3fd3dfcb868c124.png" title=" Entonces Realizar compra (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.7.1</span>
+</div>
+</body>
+</html>

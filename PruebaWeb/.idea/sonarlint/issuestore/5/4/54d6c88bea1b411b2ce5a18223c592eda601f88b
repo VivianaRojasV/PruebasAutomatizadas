@@ -1,0 +1,33 @@
+
+t
+java:S1104"YMake BTN_PRODUCTOS a static final constant or non-public and provide accessors if needed.(§¡†›ùÿÿÿÿ
+n
+java:S1104	"XMake LBL_CANTIDAD a static final constant or non-public and provide accessors if needed.(™ñ²©
+z
+java:S1104"_Make BTN_AGREGAR_CARRITO a static final constant or non-public and provide accessors if needed.(ßô”ÿÿÿÿÿ
+w
+java:S1104"aMake LBL_CANTIDAD_PRODUCTO a static final constant or non-public and provide accessors if needed.(¶š‰•
+u
+java:S1104"_Make LBL_NOMBRE_PRODUCTO a static final constant or non-public and provide accessors if needed.(ÅÛÏó
+N
+java:S1444"3Make this "public static BTN_PRODUCTOS" field final(§¡†›ùÿÿÿÿ
+H
+java:S1444	"2Make this "public static LBL_CANTIDAD" field final(™ñ²©
+T
+java:S1444"9Make this "public static BTN_AGREGAR_CARRITO" field final(ßô”ÿÿÿÿÿ
+Q
+java:S1444";Make this "public static LBL_CANTIDAD_PRODUCTO" field final(¶š‰•
+O
+java:S1444"9Make this "public static LBL_NOMBRE_PRODUCTO" field final(ÅÛÏó
+s
+java:S3008"XRename this field "BTN_PRODUCTOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¡†›ùÿÿÿÿ
+m
+java:S3008	"WRename this field "LBL_CANTIDAD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ñ²©
+y
+java:S3008"^Rename this field "BTN_AGREGAR_CARRITO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßô”ÿÿÿÿÿ
+v
+java:S3008"`Rename this field "LBL_CANTIDAD_PRODUCTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶š‰•
+t
+java:S3008"^Rename this field "LBL_NOMBRE_PRODUCTO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÛÏó
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ÂÖÁğüÿÿÿÿ

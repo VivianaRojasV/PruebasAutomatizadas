@@ -1,0 +1,1 @@
+gradle test --tests *com.demoblaze.runners.CarritoCompraRunner aggregate & cd target/site/serenity & index.html

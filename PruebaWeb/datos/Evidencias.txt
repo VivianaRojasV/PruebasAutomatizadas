@@ -1,0 +1,8 @@
+Evidencias:
+
+Como QA y sugerencia a la mejora del producto, se pudieron evidencias las siguientes cosas:
+
+No tiene botón de retornar a una busqueda, haciendo que cualquier busqueda sea directamente desde el home.
+No tiene validación de datos en credit card, mes y año, dado que permite ingresar campos alfa numericos y de caracteres especiales.
+Permite realizar un id de compra y datos de la orden sin haber agregado productos al carrito, por lo cual no permitía realizar validaciones. 
+
